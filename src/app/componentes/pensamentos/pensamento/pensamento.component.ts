@@ -16,7 +16,13 @@ export class PensamentoComponent {
     construtor(){}
 
     ngOnInit(): void {
+    }
 
+    larguraPensamento(): string {
+      if (this.pensamento.conteudo.length >= 256) {
+         return 'pensamentos-g'
+      }
+        return 'pensamento-p'
     }
 
 }
